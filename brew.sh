@@ -35,6 +35,7 @@ brew cask install notion
 brew cask install dashlane
 brew cask install teamviewer
 brew cask install maccy
+brew cask install macmediakeyforwarder
 
 # brew cask install vmware-fusion
 # brew cask install processing
