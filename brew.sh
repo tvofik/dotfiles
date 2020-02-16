@@ -37,6 +37,7 @@ brew cask install dashlane
 brew cask install teamviewer
 brew cask install maccy
 brew cask install macmediakeyforwarder
+brew cask install the-unarchiver
 
 # brew cask install processing
 # brew cask install dash
