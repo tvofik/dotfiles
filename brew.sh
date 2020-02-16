@@ -42,7 +42,7 @@ brew cask install cyberduck
 brew cask install whatsapp
 brew cask install dash
 brew cask install numi
-
+brew cask install insomnia
 # brew cask install processing
 # brew cask install vmware-fusion
 # brew cask install sourcetree
