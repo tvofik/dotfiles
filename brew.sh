@@ -12,6 +12,7 @@ brew install jq
 brew install git-secrets
 brew install git
 brew install bash-completion
+brew install fliqlo
 
 # Jokes
 brew install cowsay
@@ -37,11 +38,8 @@ brew cask install teamviewer
 brew cask install maccy
 brew cask install macmediakeyforwarder
 
-# brew cask install vmware-fusion
 # brew cask install processing
 # brew cask install dash
-# brew cask install sublime-text
-# brew cask install virtualbox
 # brew cask install vmware-fusion
 # brew cask install sourcetree
 # brew cask install google-backup-and-sync
