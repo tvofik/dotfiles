@@ -13,6 +13,7 @@ brew install git-secrets
 brew install git
 brew install bash-completion
 brew install fliqlo
+brew install trash
 
 # Jokes
 brew install cowsay
@@ -25,7 +26,6 @@ brew cask install firefox-developer-edition
 brew cask install visual-studio-code
 brew cask install spotify
 brew cask install discord
-brew cask install vlc
 brew cask install numi
 brew cask install slack
 brew cask install iterm2
@@ -43,6 +43,8 @@ brew cask install whatsapp
 brew cask install dash
 brew cask install numi
 brew cask install insomnia
+
+# brew cask install vlc
 # brew cask install processing
 # brew cask install vmware-fusion
 # brew cask install sourcetree
