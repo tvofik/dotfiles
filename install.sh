@@ -1,12 +1,23 @@
 #!/usr/bin/env bash
 ############################
 # This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
-# And also installs Homebrew Packages
+# And also installs Homebrew Packages & Pip Packages
 ############################
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: install.sh <home_directory>"
     exit 1
+fi
+
+echo "Installing a new machine? Nice!"
+
+if ! command -v brew > /dev/null 2>&1; then
+  echo "Okay, lets do this. First things first, we need to install homebrew in order to get all the stuff you need"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+else
+  echo "Homebrew was already available... skipping the installation"
+  echo "Let's update it instead! (you know you haven't updated in a while)"
+  brew update
 fi
 
 homedir=$1
