@@ -9,6 +9,8 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
+homedir=$1
+
 echo "Installing a new machine? Nice!"
 
 if ! command -v brew > /dev/null 2>&1; then
@@ -19,8 +21,6 @@ else
   echo "Let's update it instead! (you know you haven't updated in a while)"
   brew update
 fi
-
-homedir=$1
 
 # dotfiles directory
 dotfiledir=${homedir}/dotfiles
