@@ -29,6 +29,6 @@ else
 fi
 
 # Clone Repo 
-# git clone https://github.com/tvofik/dotfiles.git ~/dotfiles
-# cd ~/dotfiles
-# . ./install.sh
+git clone https://github.com/tvofik/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+. ./install.sh
