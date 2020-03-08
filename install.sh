@@ -33,10 +33,10 @@ curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-co
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh" > ${homedir}/.git-prompt.sh
 
 # Run the Homebrew Script
-sudo . ./brew.sh
+. ./brew.sh
 
 # Download Docker Completion
 sudo curl -L https://raw.githubusercontent.com/docker/compose/1.25.3/contrib/completion/bash/docker-compose -o /usr/local/etc/bash_completion.d/docker-compose
 
 # Run the pip script
-sudo . ./pip.sh
+. ./pip.sh
