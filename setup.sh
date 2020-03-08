@@ -31,4 +31,4 @@ fi
 # Clone Repo 
 git clone https://github.com/tvofik/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-sudo . ./install.sh ${homedir}
+. ./install.sh ${homedir}
