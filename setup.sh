@@ -13,22 +13,22 @@ echo ${homedir}
 
 if ! command -v brew > /dev/null 2>&1; then
   echo "Installing homebrew..."
-#  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
   echo "Homebrew is already installed... skipping the installation"
   echo "Updating Homebrew..."
-#  brew update
+  brew update    
 fi
 
 if ! command -v git > /dev/null 2>&1 ; then
   echo "Installing Git..."
-#  brew install git
+  brew install git
 else
   echo "Upgrading Git..."
-#  brew upgrade git
+  brew upgrade git
 fi
 
 # Clone Repo 
 git clone https://github.com/tvofik/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-# . ./install.sh ${homedir}
+. ./install.sh ${homedir}
