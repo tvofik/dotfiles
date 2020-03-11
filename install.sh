@@ -40,3 +40,16 @@ sudo curl -L https://raw.githubusercontent.com/docker/compose/1.25.3/contrib/com
 
 # Run the pip script
 . ./pip.sh
+
+# Install OH-MY-ZSH
+echo "Installing OH-MY-ZSH..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# ITERM Preference setup
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm"
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+# Speed up the Dock animation time
+defaults write com.apple.dock autohide-time-modifier -float 0.25;killall Dock

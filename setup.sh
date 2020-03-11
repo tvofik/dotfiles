@@ -20,17 +20,8 @@ else
   brew update    
 fi
 
-if ! command -v git > /dev/null 2>&1 ; then
-  echo "Installing Git..."
-  brew install git
-else
-  echo "Upgrading Git..."
-  brew upgrade git
-fi
-
-# Clone Repo 
+# Clone Repo
+echo "Cloning Repo..."
 git clone https://github.com/tvofik/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 /bin/bash install.sh ${homedir}
-# . ./install.sh ${homedir}
-

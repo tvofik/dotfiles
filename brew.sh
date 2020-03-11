@@ -5,7 +5,6 @@ brew install tree
 brew install python
 brew install awscli
 brew install terraform
-brew install docker
 brew install ansible
 brew install tldr
 brew install jq
@@ -42,8 +41,10 @@ brew cask install cyberduck
 brew cask install whatsapp
 brew cask install dash
 brew cask install numi
-brew cask install insomnia
+brew cask install brave-browser
+brew cask install docker
 
+# brew cask install insomnia
 # brew cask install vlc
 # brew cask install processing
 # brew cask install vmware-fusion
