@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
 # Install brew packages
-brew install tree
-brew install python
-brew install awscli
+brew install bash-completion
+brew install git-secrets
+brew install serverless
 brew install terraform
 brew install ansible
-brew install tldr
-brew install jq
-brew install git-secrets
-brew install git
-brew install bash-completion
-brew install fliqlo
+brew install python
+brew install awscli
 brew install trash
+brew install tldr
+brew install tree
+brew install git
+brew install jq
 
 # Jokes
 brew install cowsay
@@ -20,29 +20,30 @@ brew install htop
 brew install tmux
 
 # Install MacOS Applications
-brew cask install google-chrome
 brew cask install firefox-developer-edition
-brew cask install visual-studio-code
-brew cask install spotify
-brew cask install discord
-brew cask install numi
-brew cask install slack
-brew cask install iterm2
-brew cask install appcleaner
-brew cask install postman
-brew cask install balenaetcher
-brew cask install notion
-brew cask install dashlane
-brew cask install teamviewer
-brew cask install maccy
 brew cask install macmediakeyforwarder
+brew cask install visual-studio-code
 brew cask install the-unarchiver
+brew cask install brave-browser
+brew cask install google-chrome
+brew cask install balenaetcher
+brew cask install teamviewer
+brew cask install appcleaner
 brew cask install cyberduck
+brew cask install dashlane
 brew cask install whatsapp
+brew cask install postman
+brew cask install discord
+brew cask install spotify
+brew cask install notion
+brew cask install iterm2
+brew cask install fliqlo
+brew cask install docker
+brew cask install slack
+brew cask install maccy
+brew cask install numi
 brew cask install dash
 brew cask install numi
-brew cask install brave-browser
-brew cask install docker
 
 # brew cask install insomnia
 # brew cask install vlc

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-#pip install cfn_flip
+pip3 install cfn_flip
