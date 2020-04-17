@@ -20,7 +20,6 @@ brew install htop
 brew install tmux
 
 # Install MacOS Applications
-brew cask install firefox-developer-edition
 brew cask install macmediakeyforwarder
 brew cask install visual-studio-code
 brew cask install openvpn-connect
@@ -46,6 +45,7 @@ brew cask install numi
 brew cask install dash
 brew cask install numi
 
+# brew cask install firefox-developer-edition
 # brew cask install google-backup-and-sync
 # brew cask install vmware-fusion
 # brew cask install processing
