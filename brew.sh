@@ -23,6 +23,7 @@ brew install tmux
 brew cask install firefox-developer-edition
 brew cask install macmediakeyforwarder
 brew cask install visual-studio-code
+brew cask install openvpn-connect
 brew cask install the-unarchiver
 brew cask install brave-browser
 brew cask install google-chrome
@@ -45,13 +46,13 @@ brew cask install numi
 brew cask install dash
 brew cask install numi
 
-# brew cask install insomnia
-# brew cask install vlc
-# brew cask install processing
-# brew cask install vmware-fusion
-# brew cask install sourcetree
 # brew cask install google-backup-and-sync
-# brew cask install skype
-# brew cask install gimp
+# brew cask install vmware-fusion
+# brew cask install processing
+# brew cask install sourcetree
 # brew cask install hyperdock
+# brew cask install insomnia
+# brew cask install skype
 # brew cask install divvy
+# brew cask install gimp
+# brew cask install vlc
