@@ -9,8 +9,9 @@ brew install ansible
 brew install python
 brew install awscli
 brew install trash
-brew install tldr
+brew install broot # for file management
 brew install tree
+brew install tldr
 brew install git
 brew install jq
 
