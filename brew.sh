@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # Install brew packages
-brew install bash-completion
 brew install git-secrets
 brew install serverless
 brew install terraform
