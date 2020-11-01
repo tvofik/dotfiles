@@ -15,7 +15,7 @@ homedir=$1
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="aliases gitconfig"
+files="zshrc aliases gitconfig"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
