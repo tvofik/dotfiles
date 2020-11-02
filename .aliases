@@ -30,8 +30,10 @@ alias pgoogle='ping 8.8.8.8' # ping google
 alias myip='curl -4 icanhazip.com' #Show ip
 
 # Editing and reloading bash profile
-alias ebash='vim ~/.bash_profile'
-alias rbash='source ~/.bash_profile'
+# alias ebash='vim ~/.bash_profile'
+# alias rbash='source ~/.bash_profile'
+alias ezsh='vim ~/.zshrc'
+alias rzsh='source ~/.zshrc'
 
 # Stored Regular Expressions
 alias reg_mac='echo [0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}'
