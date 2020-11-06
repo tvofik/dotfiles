@@ -29,6 +29,7 @@ brew cask install google-chrome
 brew cask install balenaetcher
 brew cask install teamviewer
 brew cask install appcleaner
+brew cask install tableplus
 brew cask install cyberduck
 brew cask install dashlane
 brew cask install whatsapp
@@ -44,7 +45,6 @@ brew cask install maccy
 brew cask install numi
 brew cask install dash
 brew cask install numi
-
 # brew cask install firefox-developer-edition
 # brew cask install google-backup-and-sync
 # brew cask install vmware-fusion
