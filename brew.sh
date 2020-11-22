@@ -35,6 +35,7 @@ brew cask install dashlane
 brew cask install whatsapp
 brew cask install postman
 brew cask install discord
+brew cask install anydesk #! Testing if it is better than Teamviewer
 brew cask install spotify
 brew cask install notion
 brew cask install iterm2
