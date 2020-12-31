@@ -20,32 +20,33 @@ brew install htop
 brew install tmux
 
 # Install MacOS Applications
-brew cask install macmediakeyforwarder
-brew cask install visual-studio-code
-brew cask install openvpn-connect
-brew cask install the-unarchiver
-brew cask install brave-browser
-brew cask install google-chrome
-brew cask install balenaetcher
-brew cask install teamviewer
-brew cask install appcleaner
-brew cask install tableplus
-brew cask install cyberduck
-brew cask install dashlane
-brew cask install whatsapp
-brew cask install postman
-brew cask install discord
-brew cask install anydesk #! Testing if it is better than Teamviewer
-brew cask install spotify
-brew cask install notion
-brew cask install iterm2
-brew cask install fliqlo
-brew cask install docker
-brew cask install slack
-brew cask install maccy
-brew cask install numi
-brew cask install dash
-brew cask install numi
+brew install --cask macmediakeyforwarder
+brew install --cask visual-studio-code
+brew install --cask openvpn-connect
+brew install --cask the-unarchiver
+brew install --cask brave-browser
+brew install --cask google-chrome
+brew install --cask balenaetcher
+brew install --cask teamviewer
+brew install --cask appcleaner
+brew install --cask tableplus
+brew install --cask cyberduck
+brew install --cask dashlane
+brew install --cask whatsapp
+brew install --cask postman
+brew install --cask discord
+brew install --cask anydesk
+brew install --cask spotify
+brew install --cask notion
+brew install --cask iterm2
+brew install --cask fliqlo
+brew install --cask docker
+brew install --cask slack
+brew install --cask maccy
+brew install --cask numi
+brew install --cask dash
+brew install --cask numi
+
 # brew cask install firefox-developer-edition
 # brew cask install google-backup-and-sync
 # brew cask install vmware-fusion
