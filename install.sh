@@ -22,12 +22,6 @@ echo "Changing to the ${dotfiledir} directory"
 cd ${dotfiledir}
 echo "...done"
 
-# create symlinks (will overwrite old dotfiles)
-for file in ${files}; do
-    echo "Creating symlink to $file in home directory."
-    ln -sf ${dotfiledir}/.${file} ~/.${file}
-done
-
 # Run the Homebrew Script
 . ./brew.sh
 
@@ -38,6 +32,11 @@ done
 echo "Installing OH-MY-ZSH..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# create symlinks (will overwrite old dotfiles)
+for file in ${files}; do
+    echo "Creating symlink to $file in home directory."
+    ln -sf ${dotfiledir}/.${file} ~/.${file}
+done
 # ITERM Preference setup
 # Specify the preferences directory
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm"
