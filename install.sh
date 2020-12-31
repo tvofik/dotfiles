@@ -12,7 +12,7 @@ fi
 homedir=$1
 
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles
+dotfiledir=~/${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
 files="zshrc aliases gitconfig"
@@ -25,7 +25,7 @@ echo "...done"
 # create symlinks (will overwrite old dotfiles)
 for file in ${files}; do
     echo "Creating symlink to $file in home directory."
-    ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
+    ln -sf ${dotfiledir}/.${file} ~/.${file}
 done
 
 # Run the Homebrew Script
