@@ -12,7 +12,7 @@ fi
 homedir=$1
 
 # dotfiles directory
-dotfiledir=~/${homedir}/dotfiles
+dotfiledir=~/dotfiles
 
 # list of files/folders to symlink in ${homedir}
 files="zshrc aliases gitconfig"
