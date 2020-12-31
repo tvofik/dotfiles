@@ -13,7 +13,7 @@ echo ${homedir}
 
 if ! command -v brew > /dev/null 2>&1; then
   echo "Installing homebrew..."
-  sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
   echo "Homebrew is already installed... skipping the installation"
   echo "Updating Homebrew..."
