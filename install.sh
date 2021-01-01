@@ -15,7 +15,7 @@ homedir=$1
 dotfiledir=~/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="zshrc aliases gitconfig"
+files="zshrc aliases"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -37,6 +37,10 @@ for file in ${files}; do
     echo "Creating symlink to $file in home directory."
     ln -sf ${dotfiledir}/.${file} ~/.${file}
 done
+
+# replace the .gitconfig in home directory  
+cp ${dotfiledir}/.gitconfig ~/.gitconfig
+
 # ITERM Preference setup
 # Specify the preferences directory
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm"
