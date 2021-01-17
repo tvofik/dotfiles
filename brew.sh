@@ -27,6 +27,7 @@ brew install --cask the-unarchiver
 brew install --cask brave-browser
 brew install --cask google-chrome
 brew install --cask balenaetcher
+brew install --cask powershell
 brew install --cask teamviewer
 brew install --cask appcleaner
 brew install --cask tableplus
