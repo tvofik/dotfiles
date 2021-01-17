@@ -33,6 +33,7 @@ brew install --cask tableplus
 brew install --cask cyberduck
 brew install --cask dashlane
 brew install --cask whatsapp
+brew install --cask insomnia
 brew install --cask postman
 brew install --cask discord
 brew install --cask anydesk
