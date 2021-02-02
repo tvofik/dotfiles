@@ -22,6 +22,6 @@ fi
 
 # Clone Repo
 echo "Cloning Repo..."
-git clone https://github.com/tvofik/dotfiles.git ~/dotfiles
-cd ~/dotfiles
+git clone https://github.com/tvofik/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 /bin/bash install.sh ${homedir}
