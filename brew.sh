@@ -4,6 +4,7 @@
 brew install git-secrets
 brew install serverless
 brew install terraform
+brew install cfn-lint
 brew install ansible
 brew install python
 brew install awscli
@@ -48,7 +49,6 @@ brew install --cask maccy
 brew install --cask numi
 brew install --cask dash
 brew install --cask numi
-
 # brew cask install firefox-developer-edition
 # brew cask install google-backup-and-sync
 # brew cask install vmware-fusion
