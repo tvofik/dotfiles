@@ -8,10 +8,12 @@ brew install cfn-lint
 brew install ansible
 brew install python
 brew install awscli
+brew install packer
 brew install trash
 brew install broot # for file management
 brew install tree
 brew install tldr
+brew install mas # CLI for Mac App Store
 brew install git
 brew install jq
 
@@ -28,6 +30,7 @@ brew install --cask the-unarchiver
 brew install --cask brave-browser
 brew install --cask google-chrome
 brew install --cask balenaetcher
+brew install --cask tastyworks
 brew install --cask powershell
 brew install --cask teamviewer
 brew install --cask appcleaner
@@ -39,6 +42,7 @@ brew install --cask insomnia
 brew install --cask postman
 brew install --cask discord
 brew install --cask anydesk
+brew install --cask remnote
 brew install --cask spotify
 brew install --cask notion
 brew install --cask iterm2
@@ -49,6 +53,7 @@ brew install --cask maccy
 brew install --cask numi
 brew install --cask dash
 brew install --cask numi
+
 # brew cask install firefox-developer-edition
 # brew cask install google-backup-and-sync
 # brew cask install vmware-fusion

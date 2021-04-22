@@ -25,6 +25,9 @@ echo "...done"
 # Run the Homebrew Script
 . ./brew.sh
 
+#! Add brew bundle install instead of brew.sh
+# brew bundle --file=~/.dotfiles/Brewfile
+
 # Run the pip script
 . ./pip.sh
 
