@@ -47,6 +47,7 @@ brew install --cask spotify
 brew install --cask notion
 brew install --cask iterm2
 brew install --cask fliqlo
+brew install --cask github
 brew install --cask docker
 brew install --cask slack
 brew install --cask maccy
