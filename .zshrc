@@ -69,7 +69,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose aws)
+plugins=(git aws docker docker-compose)
 ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 
@@ -106,3 +106,4 @@ source $HOME/.aliases
 # Terraform tab completion
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+source /Users/tvofik/.config/broot/launcher/bash/br
