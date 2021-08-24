@@ -5,6 +5,7 @@ brew install git-secrets
 brew install serverless
 brew install terraform
 brew install cfn-lint
+brew install aws-cdk
 brew install ansible
 brew install python
 brew install awscli
