@@ -15,7 +15,7 @@ homedir=$1
 dotfiledir=~/.dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="zshrc aliases"
+files="zshrc aliases tmux.conf"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
