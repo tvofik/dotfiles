@@ -29,3 +29,11 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 # # Enable tap-to-click
 # defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 # defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+
+
+
+# Settings to look for?
+#when performing a search = "Search the current folder"
+#new Finder windoews shows = "tabs"
+# accent color = "graphite"

@@ -1,20 +1,10 @@
 #!/usr/bin/env bash
 
-# if [ "$#" -ne 1 ]; then
-#     echo "Usage: install.sh <home_directory>"
-#     exit 1
-# fi
-
-# homedir=$1
-
-# echo "Setting up a machine? Nice!"
-
-# echo ${homedir}
-
-
 # VARIABLES #
+
 # dotfiles directory
 dotfiledir=~/.dotfiles
+
 # list of files/folders to symlink in ${homedir}
 files="zshrc aliases tmux.conf"
 
@@ -22,7 +12,7 @@ files="zshrc aliases tmux.conf"
 echo "Cloning Repo..."
 git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
 
-cd ${dotfiledir}
+# cd ${dotfiledir}
 
 # Install OH-MY-ZSH
 echo "Installing OH-MY-ZSH..."
@@ -33,9 +23,9 @@ if ! [[ command -v brew > /dev/null 2>&1 ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   # Add Brew to PATH for arm64 Architecture "M1 Mac" &  Install Rosetta
   if [[ arch = "arm64" ]]; then 
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     sudo softwareupdate --install-rosetta --agree-to-license
-    # echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tvofik/.zprofile
     # eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 else
@@ -66,3 +56,6 @@ cp ${dotfiledir}/.gitconfig ~/.gitconfig
 
 # Run the pip script
 . ./pip.sh
+
+# Run the System Configuration script
+. ./sysconfig.sh
