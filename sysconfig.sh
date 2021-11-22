@@ -36,7 +36,7 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 # Settings to look for?
 #when performing a search = "Search the current folder"
 #new Finder windoews shows = "tabs"
-General 
+# General 
 # apperance = 'Dark"
 # accent color = "graphite"
 # Highlight color = "graphite"
@@ -46,5 +46,10 @@ General
 # default web browser = "brave browser"
 # prefer tabs "in full screen"
 # allow Handoff bewteen this mac and your iCloud devices 
+
 # track pad settings
 # applications on the dock 
+
+
+# accessibility 
+# trackpad Options enable 3 fingers drag 
