@@ -7,7 +7,7 @@
 
 # homedir=$1
 
-echo "Setting up a machine? Nice!"
+# echo "Setting up a machine? Nice!"
 
 echo ${homedir}
 
