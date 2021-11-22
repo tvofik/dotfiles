@@ -14,7 +14,10 @@ echo ${homedir}
 if ! command -v brew > /dev/null 2>&1; then
   echo "Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  if [[ arch = "arm64" ]]; then eval "$(/opt/homebrew/bin/brew shellenv)"; fi ; #
+  if [[ arch = "arm64" ]]; then 
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    sudo softwareupdate --install-rosetta --agree-to-license
+  fi
     # Add brew to PATH for arm64 Architecture "M1 macs" 
     # echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tvofik/.zprofile
     # eval "$(/opt/homebrew/bin/brew shellenv)"

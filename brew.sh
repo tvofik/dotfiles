@@ -53,8 +53,6 @@ brew install --cask docker
 brew install --cask slack
 brew install --cask maccy
 brew install --cask numi
-brew install --cask dash
-brew install --cask numi
 
 # brew cask install firefox-developer-edition
 # brew cask install google-backup-and-sync
