@@ -58,4 +58,4 @@ cp ${dotfiledir}/.gitconfig ~/.gitconfig
 . ./pip.sh
 
 # Run the System Configuration script
-. ./sysconfig.sh
+# . ./sysconfig.sh
