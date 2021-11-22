@@ -107,3 +107,6 @@ source $HOME/.aliases
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 source /Users/tvofik/.config/broot/launcher/bash/br
+
+# Add brew to PATH for arm64 Architecture "M1 macs"
+eval "$(/opt/homebrew/bin/brew shellenv)"
