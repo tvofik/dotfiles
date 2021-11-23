@@ -30,7 +30,8 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 # defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 # defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-
+# defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock #Add macOS Dock spacers
+# defaults write com.apple.dock static-only -bool true; killall Dock #Have the Dock show only active apps
 
 
 # Settings to look for?
@@ -53,3 +54,6 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # accessibility 
 # trackpad Options enable 3 fingers drag 
+
+# links 
+# https://www.intego.com/mac-security-blog/unlock-the-macos-docks-hidden-secrets-in-terminal/
