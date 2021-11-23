@@ -2,6 +2,10 @@
 
 # VARIABLES #
 
+# Colors
+Color_Off='\033[0m'       # Text Reset
+BPurple='\033[1;35m'      # Purple
+
 # dotfiles directory
 dotfiledir=~/.dotfiles
 
@@ -9,7 +13,7 @@ dotfiledir=~/.dotfiles
 files="zshrc aliases tmux.conf"
 
 if ! command -v brew > /dev/null 2>&1; then
-  echo "Installing homebrew..."
+  echo -e "${BPurple} Installing homebrew...${Color_off}"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   # Add Brew to PATH for arm64 Architecture "M1 Mac" &  Install Rosetta
   if [[ `arch` == "arm64" ]]; then 
@@ -19,22 +23,23 @@ if ! command -v brew > /dev/null 2>&1; then
     # eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 else
-  echo "Homebrew is already installed... skipping the installation"
-  echo "Updating Homebrew..."
+  echo -e "${BPurple}Homebrew is already installed... skipping the installation${Color_off}"
+  echo -e "${BPurple}Updating Homebrew...${Color_off}"
   brew update
 fi
 
 # Install OH-MY-ZSH
-echo "Installing OH-MY-ZSH..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo -e "${BPurple}Installing OH-MY-ZSH...${Color_off}"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Clone Repo
-echo "Cloning Repo..."
+echo -e "${BPurple}Cloning Repo...${Color_off}"
 git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
 
 # create symlinks (will overwrite old dotfiles)
 for file in ${files}; do
-    echo "Creating symlink to $file in home directory."
+    echo -e "${BPurple}Creating symlink to $file in home directory.${Color_off}"
     ln -sf ${dotfiledir}/.${file} ~/.${file}
 done
 
