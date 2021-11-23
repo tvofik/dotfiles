@@ -47,9 +47,9 @@ cp ${dotfiledir}/.gitconfig ~/.gitconfig
 
 # Install Application With Brew
 # Run the Homebrew Script
-. ./brew.sh
+# . ./brew.sh
 #! Add brew bundle install instead of brew.sh
-# brew bundle --file=${dotfiledir}/Brewfile
+brew bundle --file=${dotfiledir}/Brewfile
 
 # Run the pip script
 . ./pip.sh
