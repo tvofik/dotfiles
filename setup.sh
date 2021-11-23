@@ -8,7 +8,7 @@ dotfiledir=~/.dotfiles
 # list of files/folders to symlink in ${homedir}
 files="zshrc aliases tmux.conf"
 
-if ! [[ command -v brew > /dev/null 2>&1 ]]; then
+if ! command -v brew > /dev/null 2>&1; then
   echo "Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   # Add Brew to PATH for arm64 Architecture "M1 Mac" &  Install Rosetta
