@@ -5,12 +5,15 @@
 # Colors
 Color_Off='\033[0m'       # Text Reset
 BPurple='\033[1;35m'      # Purple
+BCyan='\033[1;36m'        # Cyan
+
 
 # dotfiles directory
 dotfiledir=~/.dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="zshrc aliases tmux.conf"
+# files="zshrc aliases tmux.conf"
+declare -a files=("zshrc" "aliases" "tmux.conf")
 
 if ! command -v brew > /dev/null 2>&1; then
   echo -e "${BPurple} Installing homebrew...${Color_off}"
@@ -38,8 +41,8 @@ echo -e "${BPurple}Cloning Repo...${Color_off}"
 git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
 
 # create symlinks (will overwrite old dotfiles)
-for file in ${files}; do
-    echo -e "${BPurple}Creating symlink to $file in home directory.${Color_off}"
+for file in ${files[@]}; do 
+    echo -e "${BPurple}Creating symlink to $file in home directory...${Color_off}"
     ln -sf ${dotfiledir}/.${file} ~/.${file}
 done
 
@@ -53,11 +56,14 @@ cp ${dotfiledir}/.gitconfig ~/.gitconfig
 # Install Application With Brew
 # Run the Homebrew Script
 # . ./brew.sh
+
 #! Add brew bundle install instead of brew.sh
 brew bundle --file=${dotfiledir}/Brewfile
 
 # Run the pip script
-. ./pip.sh
+# . ./pip.sh
+. ${dotfiledir}/pip.sh
 
 # Run the System Configuration script
 # . ./sysconfig.sh
+# . ${dotfiledir}/sysconfig.sh
