@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-# VARIABLES #
+###################
+# VARIABLES
+###################
 
 # Colors
 Color_Off='\033[0m'       # Text Reset
 BPurple='\033[1;35m'      # Purple
 BCyan='\033[1;36m'        # Cyan
-
 
 # dotfiles directory
 dotfiledir=~/.dotfiles
