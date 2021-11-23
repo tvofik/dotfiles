@@ -8,24 +8,12 @@ dotfiledir=~/.dotfiles
 # list of files/folders to symlink in ${homedir}
 files="zshrc aliases tmux.conf"
 
-cd $HOME
-
-# Clone Repo
-echo "Cloning Repo..."
-git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
-
-# cd ${dotfiledir}
-
-# Install OH-MY-ZSH
-echo "Installing OH-MY-ZSH..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 if ! [[ command -v brew > /dev/null 2>&1 ]]; then
   echo "Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   # Add Brew to PATH for arm64 Architecture "M1 Mac" &  Install Rosetta
   if [[ arch = "arm64" ]]; then 
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     sudo softwareupdate --install-rosetta --agree-to-license
     # eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -36,6 +24,14 @@ else
   brew update
 fi
 
+# Install OH-MY-ZSH
+echo "Installing OH-MY-ZSH..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Clone Repo
+echo "Cloning Repo..."
+git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
+
 # create symlinks (will overwrite old dotfiles)
 for file in ${files}; do
     echo "Creating symlink to $file in home directory."
@@ -44,7 +40,6 @@ done
 
 # replace the .gitconfig in home directory  
 cp ${dotfiledir}/.gitconfig ~/.gitconfig
-
 
 # /bin/bash install.sh ${homedir}
 # echo "$HOME is the HOME directory"
