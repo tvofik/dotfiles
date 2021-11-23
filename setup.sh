@@ -8,6 +8,8 @@ dotfiledir=~/.dotfiles
 # list of files/folders to symlink in ${homedir}
 files="zshrc aliases tmux.conf"
 
+cd $HOME
+
 # Clone Repo
 echo "Cloning Repo..."
 git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
