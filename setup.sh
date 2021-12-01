@@ -1,38 +1,71 @@
 #!/usr/bin/env bash
 
-# if [ "$#" -ne 1 ]; then
-#     echo "Usage: install.sh <home_directory>"
-#     exit 1
-# fi
+# VARIABLES #
 
-# homedir=$1
+# Colors
+Color_Off='\033[0m'       # Text Reset
+BPurple='\033[1;35m'      # Purple
+BCyan='\033[1;36m'        # Cyan
 
-# echo "Setting up a machine? Nice!"
+echo -e "${BPurple}*** Starting Script ***${Color_off}"
 
-# echo ${homedir}
+# dotfiles directory
+dotfiledir=~/.dotfiles
 
-if ! [[ command -v brew > /dev/null 2>&1 ]]; then
-  echo "Installing homebrew..."
+# list of files/folders to symlink in ${homedir}
+# files="zshrc aliases tmux.conf"
+declare -a files=("zshrc" "aliases" "tmux.conf")
+
+if ! command -v brew > /dev/null 2>&1; then
+  echo -e "${BPurple}***** Installing homebrew *****${Color_off}"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   # Add Brew to PATH for arm64 Architecture "M1 Mac" &  Install Rosetta
-  if [[ arch = "arm64" ]]; then 
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tvofik/.zprofile
+  if [[ `arch` == "arm64" ]]; then 
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     sudo softwareupdate --install-rosetta --agree-to-license
-    # echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tvofik/.zprofile
     # eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 else
-  echo "Homebrew is already installed... skipping the installation"
-  echo "Updating Homebrew..."
+  echo -e "${BPurple}***** Homebrew is already installed, skipping the installation *****${Color_off}"
+  echo -e "${BPurple}***** Updating Homebrew *****${Color_off}"
   brew update
 fi
 
+# Install OH-MY-ZSH
+echo -e "${BPurple}***** Installing OH-MY-ZSH *****${Color_off}"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Clone Repo
-echo "Cloning Repo..."
-git clone https://github.com/tvofik/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+echo -e "${BPurple}***** Cloning Repo *****${Color_off}"
+git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
+
+# create symlinks (will overwrite old dotfiles)
+for file in ${files[@]}; do 
+    echo -e "${BPurple}***** Creating symlink to $file in home directory *****${Color_off}"
+    ln -sf ${dotfiledir}/.${file} ~/.${file}
+done
+
+# replace the .gitconfig in home directory  
+cp ${dotfiledir}/.gitconfig ~/.gitconfig
 
 # /bin/bash install.sh ${homedir}
-echo "$HOME is the HOME directory"
-/bin/bash install.sh $HOME
+# echo "$HOME is the HOME directory"
+# /bin/bash install.sh $HOME #!Might not need anymore
+
+# Install Application With Brew
+# Run the Homebrew Script
+# . ./brew.sh
+
+#! Add brew bundle install instead of brew.sh
+echo -e "${BPurple}***** Installing applications using brew *****${Color_off}"
+brew bundle --file=${dotfiledir}/Brewfile
+
+# Run the pip script
+# . ./pip.sh
+. ${dotfiledir}/pip.sh
+
+# Run the System Configuration script
+# . ./sysconfig.sh
+. ${dotfiledir}/sysconfig.sh
