@@ -76,15 +76,15 @@ mas "GoodNotes", id: 1444383602
 mas "Magnet", id: 441258766
 mas "OneTab", id: 1540160809
 mas "Spark", id: 1176895641
-# cask "wireshark"
-# cask "figma"
-# cask "anki"
-# cask "macmediakeyforwarder"
-# cask "webex"
-
 mas "Accelerate", id: 1459809092
 mas "Adblock Plus", id: 1432731683
 mas "Amphetamine", id: 937984704
 # mas "Keynote", id: 409183694
 # mas "Numbers", id: 409203825
 # mas "Pages", id: 409201541
+
+# cask "wireshark"
+# cask "figma"
+# cask "anki"
+# cask "macmediakeyforwarder"
+# cask "webex"
