@@ -68,4 +68,4 @@ brew bundle --file=${dotfiledir}/Brewfile
 
 # Run the System Configuration script
 # . ./sysconfig.sh
-# . ${dotfiledir}/sysconfig.sh
+. ${dotfiledir}/sysconfig.sh
