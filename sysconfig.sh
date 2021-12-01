@@ -3,13 +3,13 @@
 # Settings and configurations
 # DOCK CONFIG
 # Change the Dock size
-defaults write com.apple.dock tilesize -int 24 # Note: default value is value is 64
+defaults write com.apple.dock tilesize -int 24; killall Dock # Note: default value is value is 64
 # Make the Dock autohide 
-defaults write com.apple.dock autohide -int 1
+defaults write com.apple.dock autohide -int 1; killall Dock
 # Speed up the Dock animation
-defaults write com.apple.dock autohide-time-delay -float 0.0001
+defaults write com.apple.dock autohide-time-delay -float 0.0001; killall Dock
 # defaults write com.apple.dock autohide-time-modifier -float 0.25
-killall Dock #Restart the Dock
+# killall Dock #Restart the Dock
 
 # ITERM Preference setup
 # Specify the preferences directory
