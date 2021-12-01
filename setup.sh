@@ -63,7 +63,7 @@ echo -e "${BPurple}***** Installing applications using brew *****${Color_off}"
 brew bundle --file=${dotfiledir}/Brewfile
 
 # Run the pip script
-echo -e "${BPurple}***** Installing oython packages using pip *****${Color_off}"
+echo -e "${BPurple}***** Installing python packages using pip *****${Color_off}"
 # . ./pip.sh
 . ${dotfiledir}/pip.sh
 # bash -s ${dotfiledir}/pip.sh
