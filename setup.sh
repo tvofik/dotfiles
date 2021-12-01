@@ -64,12 +64,8 @@ brew bundle --file=${dotfiledir}/Brewfile
 
 # Run the pip script
 echo -e "${BPurple}***** Installing python packages using pip *****${Color_off}"
-# . ./pip.sh
 . ${dotfiledir}/pip.sh
-# bash -s ${dotfiledir}/pip.sh
 
 # Run the System Configuration script
-# . ./sysconfig.sh
 echo -e "${BPurple}***** Applying system configuration *****${Color_off}"
 . ${dotfiledir}/sysconfig.sh
-# bash -s ${dotfiledir}/sysconfig.sh
