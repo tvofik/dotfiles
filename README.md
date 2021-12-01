@@ -7,5 +7,6 @@ sudo curl -s https://raw.githubusercontent.com/tvofik/dotfiles/master/setup.sh |
 ___
 This project is heavily inspired by Corey Schafer's [dotfiles](https://github.com/CoreyMSchafer/dotfiles) project.
 
-ToFix
-[] - The pip script & system configuration script doesnt run automatically with the first run
+### To Fix
+- [ ] The pip script & system configuration script doesnt run automatically with the first run
+- [ ]
