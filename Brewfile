@@ -81,3 +81,10 @@ mas "Spark", id: 1176895641
 # cask "anki"
 # cask "macmediakeyforwarder"
 # cask "webex"
+
+mas "Accelerate", id: 1459809092
+mas "Adblock Plus", id: 1432731683
+mas "Amphetamine", id: 937984704
+# mas "Keynote", id: 409183694
+# mas "Numbers", id: 409203825
+# mas "Pages", id: 409201541
