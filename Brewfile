@@ -82,7 +82,8 @@ mas "Amphetamine", id: 937984704
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-
+mas "Dashlane", id: 517914548
+ 
 # cask "wireshark"
 # cask "figma"
 # cask "anki"
