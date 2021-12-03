@@ -9,4 +9,3 @@ This project is heavily inspired by Corey Schafer's [dotfiles](https://github.co
 
 ### To Fix
 - [ ] The pip script & system configuration script doesnt run automatically with the first run
-- [ ]
