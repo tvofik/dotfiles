@@ -147,3 +147,4 @@ mas "OneTab", id: 1540160809
 mas "Pages", id: 409201541
 mas "Rakuten Cash Back", id: 1451893560
 mas "Spark", id: 1176895641
+mas "Grammarly for Safari", id: 1462114288
