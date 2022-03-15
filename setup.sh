@@ -37,6 +37,10 @@ echo -e "${BPurple}***** Installing OH-MY-ZSH *****${Color_off}"
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Download zsh-autosuggestion
+echo -e "${BPurple}***** Cloning ZSH Autosuggestions *****${Color_off}"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # Clone Repo
 echo -e "${BPurple}***** Cloning Repo *****${Color_off}"
 git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
