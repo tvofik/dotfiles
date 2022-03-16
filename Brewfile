@@ -19,6 +19,8 @@ brew "broot"
 brew "cask"
 # Validate CloudFormation templates against the CloudFormation spec
 brew "cfn-lint"
+# Convert AWS CloudFormation templates between JSON and YAML formats
+brew "cfn-flip"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # GitHub command-line tool
