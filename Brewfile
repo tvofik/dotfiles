@@ -51,6 +51,8 @@ brew "ranger"
 brew "serverless"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Static analysis security scanner for your terraform code
+brew "tfsec"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
