@@ -17,6 +17,7 @@ brew install tldr
 brew install mas # CLI for Mac App Store
 brew install git
 brew install jq
+brew install cloudformation-guard
 
 # Jokes
 brew install cowsay
