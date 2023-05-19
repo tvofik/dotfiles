@@ -101,6 +101,8 @@ cask "maccy"
 cask "microsoft-teams"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Calculator and converter application
 cask "numi"
 # Collaboration platform for API development
