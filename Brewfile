@@ -65,6 +65,8 @@ brew "tree"
 brew "youtube-dl"
 # AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
 brew "aws/tap/aws-sam-cli"
+# General-purpose speech recognition model
+brew "openai-whisper"
 # Communications service
 cask "amazon-chime"
 # Allows connection to a computer remotely
