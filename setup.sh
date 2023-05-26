@@ -1,27 +1,26 @@
 #!/usr/bin/env bash
 
-# VARIABLES #
+## VARIABLES ##
 
 # Colors
 Color_Off='\033[0m'       # Text Reset
 BPurple='\033[1;35m'      # Purple
 BCyan='\033[1;36m'        # Cyan
 
-echo -e "${BPurple}*** Starting Script ***${Color_off}"
-
 # dotfiles directory
 dotfiledir=~/.dotfiles
 
+echo -e "${BPurple}*** Starting Script ***${Color_off}"
+
 # list of files/folders to symlink in ${homedir}
-# files="zshrc aliases tmux.conf"
 declare -a files=("zshrc" "aliases" "tmux.conf")
 
 # Install Homebrew
 if ! command -v brew > /dev/null 2>&1; then
   echo -e "${BPurple}***** Installing homebrew *****${Color_off}"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  # Add Brew to PATH for arm64 Architecture "M series Macs" &  Install Rosetta
-  if [[ `arch` == "arm64" ]]; then 
+  # Add Brew to PATH for arm64 Architecture "M series Macs" & Install Rosetta
+  if [[ `arch` == "arm64" ]]; then
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     sudo softwareupdate --install-rosetta --agree-to-license
@@ -40,8 +39,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo -e "${BPurple}***** Cloning ZSH Autosuggestions *****${Color_off}"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-# Clone Repo
-echo -e "${BPurple}***** Cloning Repo *****${Color_off}"
+# Clone Dotfiles Repo
+echo -e "${BPurple}***** Cloning dotfiles Repo *****${Color_off}"
 git clone https://github.com/tvofik/dotfiles.git ${dotfiledir}
 
 # create symlinks (will overwrite old dotfiles)
@@ -59,7 +58,7 @@ cp ${dotfiledir}/.gitconfig ~/.gitconfig
 
 # Install Application With Brew
 # Run the Homebrew Script
-# . ./brew.sh
+# . ./brew.sh #Not needed anymore
 
 # Add brew bundle install instead of brew.sh
 echo -e "${BPurple}***** Installing applications using brew *****${Color_off}"
