@@ -19,7 +19,7 @@ declare -a files=("zshrc" "aliases" "tmux.conf")
 if ! command -v brew > /dev/null 2>&1; then
   echo -e "${BPurple}***** Installing homebrew *****${Color_off}"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  # Add Brew to PATH for arm64 Architecture "M1 Mac" &  Install Rosetta
+  # Add Brew to PATH for arm64 Architecture "M series Macs" &  Install Rosetta
   if [[ `arch` == "arm64" ]]; then 
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -62,7 +62,7 @@ cp ${dotfiledir}/.gitconfig ~/.gitconfig
 # Run the Homebrew Script
 # . ./brew.sh
 
-#! Add brew bundle install instead of brew.sh
+# Add brew bundle install instead of brew.sh
 echo -e "${BPurple}***** Installing applications using brew *****${Color_off}"
 brew bundle --file=${dotfiledir}/Brewfile
 
