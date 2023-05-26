@@ -16,6 +16,7 @@ dotfiledir=~/.dotfiles
 # files="zshrc aliases tmux.conf"
 declare -a files=("zshrc" "aliases" "tmux.conf")
 
+# Install Homebrew
 if ! command -v brew > /dev/null 2>&1; then
   echo -e "${BPurple}***** Installing homebrew *****${Color_off}"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -34,8 +35,7 @@ fi
 
 # Install OH-MY-ZSH
 echo -e "${BPurple}***** Installing OH-MY-ZSH *****${Color_off}"
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Download zsh-autosuggestion
 echo -e "${BPurple}***** Cloning ZSH Autosuggestions *****${Color_off}"
