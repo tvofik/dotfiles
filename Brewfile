@@ -21,8 +21,8 @@ brew "cfn-lint"
 brew "cfn-flip"
 # Configurable talking characters in ASCII art
 brew "cowsay"
-# GitHub command-line tool
-brew "gh"
+# Checks CloudFormation templates for compliance using a declarative syntax
+brew "cloudformation-guard"
 # Distributed revision control system
 brew "git"
 # Prevents you from committing sensitive information to a git repo
@@ -158,6 +158,8 @@ mas "Grammarly for Safari", id: 1462114288
 # cask "github"
 # HTTP and GraphQL Client
 # cask "insomnia"
+# GitHub command-line tool
+# brew "gh"
 
 # mas application uninstalled
 # mas "Accelerate", id: 1459809092
