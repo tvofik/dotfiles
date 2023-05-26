@@ -25,7 +25,6 @@ if ! command -v brew > /dev/null 2>&1; then
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     sudo softwareupdate --install-rosetta --agree-to-license
-    # eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 else
   echo -e "${BPurple}***** Homebrew is already installed, skipping the installation *****${Color_off}"
