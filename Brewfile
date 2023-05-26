@@ -63,6 +63,8 @@ brew "tree"
 brew "aws/tap/aws-sam-cli"
 # General-purpose speech recognition model
 brew "openai-whisper"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
 # Communications service
 cask "amazon-chime"
 # Application uninstaller
