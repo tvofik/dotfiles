@@ -99,14 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.aliases
-# tabtab source for packages
+
+# tabtab source for packages -> https://github.com/denosaurs/tabtab
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
 
 # Terraform tab completion
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
-source /Users/tvofik/.config/broot/launcher/bash/br
-
-# # Add brew to PATH for arm64 Architecture "M1 macs"
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
