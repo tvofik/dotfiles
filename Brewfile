@@ -118,7 +118,7 @@ cask "spotify"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Desktop trading platform for the tastyworks brokerage
-cask "tastyworks"
+cask "tastytrade"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
 # Unpacks archive files
