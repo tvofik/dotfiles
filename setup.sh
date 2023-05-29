@@ -52,14 +52,6 @@ done
 # replace the .gitconfig in home directory  
 cp ${dotfiledir}/.gitconfig ~/.gitconfig
 
-# /bin/bash install.sh ${homedir}
-# echo "$HOME is the HOME directory"
-# /bin/bash install.sh $HOME #!Might not need anymore
-
-# Install Application With Brew
-# Run the Homebrew Script
-# . ./brew.sh #Not needed anymore
-
 # Add brew bundle install instead of brew.sh
 echo -e "${BPurple}***** Installing applications using brew *****${Color_off}"
 brew bundle --file=${dotfiledir}/Brewfile

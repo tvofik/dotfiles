@@ -2,6 +2,7 @@
 
 # Settings and configurations
 # DOCK CONFIG
+
 # Change the Dock size
 defaults write com.apple.dock tilesize -int 24 # Note: default value is value is 64
 # Make the Dock autohide 
