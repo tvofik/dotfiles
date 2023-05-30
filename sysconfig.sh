@@ -35,8 +35,8 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 
 # Settings to look for?
-#when performing a search = "Search the current folder"
-#new Finder windoews shows = "tabs"
+# when performing a search = "Search the current folder"
+# new Finder windows shows = "tabs"
 # General 
 # apperance = 'Dark"
 # accent color = "graphite"
