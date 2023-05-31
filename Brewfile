@@ -140,6 +140,7 @@ mas "Pages", id: 409201541
 mas "Rakuten Cash Back", id: 1451893560
 mas "Spark", id: 1176895641
 mas "Grammarly for Safari", id: 1462114288
+mas "Balance: Mindful time tracking", id: 1637311725
 
 # REMOVED APPLICATIONS # 
 # Meet, chat, call, and collaborate in just one place
