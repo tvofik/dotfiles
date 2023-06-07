@@ -141,6 +141,9 @@ mas "Rakuten Cash Back", id: 1451893560
 mas "Spark", id: 1176895641
 mas "Grammarly for Safari", id: 1462114288
 mas "Balance: Mindful time tracking", id: 1637311725
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
 
 # REMOVED APPLICATIONS # 
 # Meet, chat, call, and collaborate in just one place
