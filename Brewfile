@@ -13,6 +13,8 @@ brew "aws-cdk"
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Tool for creating isolated virtual python environments
+brew "virtualenv"
 # New way to see and navigate directory trees
 brew "broot"
 # Validate CloudFormation templates against the CloudFormation spec
