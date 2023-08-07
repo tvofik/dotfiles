@@ -29,6 +29,8 @@ brew "cloudformation-guard"
 brew "git"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
+# Configurable static site generator
+brew "hugo"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Improved top (interactive process viewer)
