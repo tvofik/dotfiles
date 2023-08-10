@@ -85,6 +85,8 @@ cask "firefox"
 cask "cyberduck"
 # API documentation browser and code snippet manager
 cask "dash"
+# Chromium based browser
+cask "arc"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
