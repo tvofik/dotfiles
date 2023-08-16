@@ -112,5 +112,4 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin/
 export GOROOT="$(brew --prefix golang)/libexec"
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:$GOBIN
