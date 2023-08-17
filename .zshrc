@@ -110,6 +110,5 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 # Setting GO environment variables
 
 export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin/
 export GOROOT="$(brew --prefix golang)/libexec"
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:$GOBIN
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
