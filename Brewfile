@@ -83,6 +83,8 @@ cask "brave-browser"
 cask "firefox"
 # Server and cloud storage browser
 cask "cyberduck"
+# AirPods companion app
+cask "airbuddy"
 # API documentation browser and code snippet manager
 cask "dash"
 # Chromium based browser
