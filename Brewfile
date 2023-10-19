@@ -91,6 +91,8 @@ cask "airbuddy"
 cask "dash"
 # Chromium based browser
 cask "arc"
+# Database version management tool
+cask "dbngin"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
