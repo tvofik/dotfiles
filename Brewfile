@@ -25,6 +25,8 @@ brew "cfn-flip"
 brew "cowsay"
 # Checks CloudFormation templates for compliance using a declarative syntax
 brew "cloudformation-guard"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Prevents you from committing sensitive information to a git repo
