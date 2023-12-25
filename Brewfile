@@ -49,6 +49,8 @@ brew "nmap"
 brew "packer"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
 # File browser
 brew "ranger"
 # Build applications with serverless architectures
