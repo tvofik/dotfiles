@@ -101,7 +101,9 @@ cask "arc"
 cask "dbngin"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
+# Kubernetes and container management on the desktop
+cask "rancher"
+# Pack, ship and run any application as a lightweight container
 cask "docker"
 # Flip clock screensaver
 cask "fliqlo"
