@@ -49,6 +49,8 @@ brew "nmap"
 brew "packer"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
+# Administration and development platform for PostgreSQL
+brew "pgadmin4"
 # Sends magic packets to wake up network-devices
 brew "wakeonlan"
 # File browser
