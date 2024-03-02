@@ -105,6 +105,8 @@ cask "discord"
 cask "rancher"
 # Pack, ship and run any application as a lightweight container
 cask "docker"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Flip clock screensaver
 cask "fliqlo"
 # Web browser
