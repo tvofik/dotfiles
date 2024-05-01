@@ -31,10 +31,14 @@ brew "gh"
 brew "git"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
-# Configurable static site generator
-brew "hugo"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Kubernetes package manager
+brew "helm"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "derailed/k9s/k9s"
+# Configurable static site generator
+brew "hugo"
 # Improved top (interactive process viewer)
 brew "htop"
 # Lightweight and flexible command-line JSON processor
