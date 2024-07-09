@@ -43,6 +43,8 @@ brew "hugo"
 brew "htop"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Mac App Store command-line interface
 brew "mas"
 # HTTP/2 C Library
