@@ -75,6 +75,8 @@ brew "tldr"
 brew "tmux"
 # CLI tool that moves files or folder to the trash
 brew "trash"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # Terminal sharing over the Internet
 brew "tty-share"
 # Display directories as trees (with optional color/HTML output)
