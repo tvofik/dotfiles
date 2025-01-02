@@ -33,6 +33,8 @@ brew "git"
 brew "git-secrets"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+brew "ghostty"
 # Kubernetes package manager
 brew "helm"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -119,8 +121,8 @@ cask "raycast"
 cask "fliqlo"
 # Web browser
 cask "google-chrome"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
+# # Terminal emulator as alternative to Apple's Terminal app
+# cask "iterm2"
 # Provides access to camera controls
 cask "logitech-camera-settings"
 # Software for Logitech devices
