@@ -41,6 +41,8 @@ brew "helm"
 brew "derailed/k9s/k9s"
 # Configurable static site generator
 brew "hugo"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Improved top (interactive process viewer)
 brew "htop"
 # Lightweight and flexible command-line JSON processor
