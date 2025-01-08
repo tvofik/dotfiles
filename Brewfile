@@ -165,6 +165,8 @@ cask "visual-studio-code"
 cask "zoom"
 # Remote pair programming
 cask "pop"
+# Jetbrains mono font
+cask "font-jetbrains-mono"
 mas "Dashlane", id: 517914548
 mas "Deliveries", id: 290986013
 mas "GoodNotes", id: 1444383602
