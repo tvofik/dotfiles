@@ -137,6 +137,8 @@ cask "notion"
 cask "obsidian"
 # Spaced-repetition powered note-taking tool
 cask "remnote"
+# Kubernetes and container management on the desktop
+cask "rancher"
 # Calculator and converter application
 cask "numi"
 # Collaboration platform for API development
