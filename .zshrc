@@ -113,8 +113,11 @@ export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
-# fzf intergration
+# fzf integration
 source <(fzf --zsh)
+# kubeclt shell autocompletion 
+source <(kubectl completion zsh)
+
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/tvofik/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
