@@ -117,6 +117,8 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 source <(fzf --zsh)
 # kubeclt shell autocompletion 
 source <(kubectl completion zsh)
+# Helm shell autocompletion
+source <(helm completion zsh)
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/tvofik/.rd/bin:$PATH"
