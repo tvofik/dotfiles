@@ -1,8 +1,7 @@
 tap "aws/tap"
-tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "homebrew/core"
+tap "hashicorp/tap"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Platform built on V8 to build network applications
@@ -56,7 +55,7 @@ brew "nghttp2"
 # Port scanning utility for large networks
 brew "nmap"
 # Tool for creating identical machine images for multiple platforms
-brew "packer"
+brew "hashicorp/tap/packer"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
 # Administration and development platform for PostgreSQL
@@ -68,13 +67,13 @@ brew "ranger"
 # Build applications with serverless architectures
 brew "serverless"
 # Tool to build, change, and version infrastructure
-brew "terraform"
+brew "hashicorp/tap/terraform"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
 # Password manager
 brew "pass"
 # Simplified and community-driven man pages
-brew "tldr"
+brew "tlrc"
 # Terminal multiplexer
 brew "tmux"
 # CLI tool that moves files or folder to the trash
