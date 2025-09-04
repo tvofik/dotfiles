@@ -64,8 +64,6 @@ brew "pgadmin4"
 brew "wakeonlan"
 # File browser
 brew "ranger"
-# Build applications with serverless architectures
-brew "serverless"
 # Tool to build, change, and version infrastructure
 brew "hashicorp/tap/terraform"
 # Static analysis security scanner for your terraform code
@@ -164,6 +162,8 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Remote pair programming
 cask "pop"
 # Jetbrains mono font
@@ -199,8 +199,6 @@ mas "Affinity Publisher 2", id: 1606941598
 # cask "anydesk"
 # Emacs dependency management
 # brew "cask"
-# Download YouTube videos from the command-line
-# brew "youtube-dl"
 # Desktop client for GitHub repositories
 # cask "github"
 # HTTP and GraphQL Client
