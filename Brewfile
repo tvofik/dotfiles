@@ -48,6 +48,8 @@ brew "htop"
 brew "jq"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Convert RAW images captured with Fujifilm cameras
+brew "fujifilm-x-raw-studio"
 # Mac App Store command-line interface
 brew "mas"
 # HTTP/2 C Library
