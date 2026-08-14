@@ -34,6 +34,10 @@ brew "git-secrets"
 brew "go"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 brew "ghostty"
+# Menu bar calendar
+brew "itsycal"
+# Deep clean and optimize your Mac
+brew "mole"
 # Kubernetes package manager
 brew "helm"
 # Kubernetes CLI To Manage Your Clusters In Style!

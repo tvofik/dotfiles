@@ -126,3 +126,4 @@ export PATH="/Users/tvofik/.rd/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/tofu tofu
+export PATH="$HOME/.local/bin:$PATH"
